@@ -1,0 +1,144 @@
+.focus-border {
+    border-left: 1px solid white;
+}
+
+.players {
+    font-size: 22px;
+    font-family: 'Lemon/Milk', sans-serif;   
+    word-wrap: break-word;                                    
+}
+
+.songs {
+    font-size: 11px;
+    font-family: 'Lemon/Milk', sans-serif;
+}
+
+svg {
+    width: 16.5px;
+    height: 16.5px;
+}
+
+.player-ban {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.33em;
+}
+
+.player-1-color {
+    text-decoration-color: #e91e63;
+    color: #e91e63;
+    fill: #e91e63;
+}
+.player-2-color {
+    text-decoration-color: #03a9f4;
+    color: #03a9f4;
+    fill: #03a9f4;
+}
+.player-defend-color {
+    color: #19e619;
+    fill: #19e619;
+}
+.player-steal-color {
+    color: #ff8000;
+    fill: #ff8000;
+}
+
+.tiebreak-color {
+    color: #e6e619;
+    fill: #e6e619;
+}
+
+.player-1-highlight {
+    background-color: #e91e6344;
+}
+
+.player-2-highlight {
+    background-color: #03a9f444;
+}
+
+.tiebreak-lean-highlight {
+    background-color: #e6e61922;
+}
+
+.tiebreak-lock-highlight {
+    background-color: #e6e61944;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .players {
+        font-size: 28px;
+    }
+
+    .songs {
+        font-size: 14px;
+    }
+
+    svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .player-ban {
+        text-decoration-thickness: 4.6px;
+    }
+
+    input[type='radio'] {
+        transform: scale(1.25);
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .players {
+        font-size: 34px;
+    }
+
+    .songs {
+        font-size: 17px;
+    }
+
+    svg{
+        width: 25.5px;
+        height: 25.5px;
+    }
+
+    .player-ban {
+        text-decoration-thickness: 5.6px;
+    }
+
+    input[type='radio'] {
+        transform: scale(1.5);
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .players {
+        font-size: 40px;
+    }
+
+    .songs {
+        font-size: 20px;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .player-ban {
+        text-decoration-thickness: 6.6px;
+    }
+
+    input[type='radio'] {
+        transform: scale(1.75);
+    }
+}

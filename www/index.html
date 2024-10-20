@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">  
     <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="phase_1.js"></script>
   </head>
   <body>
  
@@ -47,65 +48,65 @@
             </div>
             <span class="border-bottom"></span>
         </div>
-
    
-        <div class="row songs text-center focus-border">
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+        <div class="row songs text-center">
+            <div class="col border m-3 p-3" id="song1box">
+                <button class="song-button" id="song1" onclick="player1Ban(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+                
             </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+            <div class="col border m-3 p-3" id="song2box">
+                <button class="song-button" id="song2" onclick="player2Ban(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
-            </div>
-        </div>
-
-        <div class="row songs text-center focus-border">
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
-            </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
-            </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+            <div class="col border m-3 p-3" id="song3box">
+                <button class="song-button" id="song3" onclick="tiebreakerPick(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
         </div>
 
-        <div class="row songs text-center focus-border">
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+        <div class="row songs text-center" id="box4">
+            <div class="col border m-3 p-3" id="song4box">
+                <button class="song-button" id="song4" onclick="player1Pick(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+            <div class="col border m-3 p-3" id="song5box">
+                <button class="song-button" id="song5" onclick="player2Pick(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+            <div class="col border m-3 p-3" id="song6box">
+                <button class="song-button" id="song6" onclick="player1Tiebreaker(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
         </div>
 
-        <div class="row songs text-center focus-border">
-            <div class="col border border-primary m-3 p-3">
+        <div class="row songs text-center">
+            <div class="col border m-3 p-3" id="song7box">
+                <button class="song-button" id="song7" onclick="player1Win(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song8box">
+                <button class="song-button" id="song8" onclick="player2Win(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song9box">
+                <button class="song-button" id="song9" onclick="player2Tiebreaker(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+        </div>
+
+        <div class="row songs text-center">
+            <div class="col border m-3 p-3">
                 Blank Border<br>As hybrid songs<br>Are the only cat. with 4 songs
             </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+            <div class="col border m-3 p-3" id="song10box">
+                <button class="song-button" id="song10" onclick="predictedTiebreaker(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
-            <div class="col border border-primary m-3 p-3">
+            <div class="col border m-3 p-3">
                 Blank Border<br>As hybrid songs<br>Are the only cat. with 4 songs
             </div>
         </div>
 
-        <div class="row songs text-center focus-border">
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+        <div class="row songs text-center">
+            <div class="col border m-3 p-3" id="song11box">
+                <button class="song-button" id="song11" onclick="player1Steal(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+            <div class="col border m-3 p-3" id="song12box">
+                <button class="song-button" id="song12" onclick="player2Steal(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
-            <div class="col border border-primary m-3 p-3">
-                Artist - Song<br>Charted by: charter<br>Featured on: Pack
+            <div class="col border m-3 p-3" id="song13box">
+                <button class="song-button" id="song13" onclick="determineSong(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
             </div>
         </div>
     

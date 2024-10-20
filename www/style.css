@@ -1,5 +1,6 @@
-.focus-border {
-    border-left: 1px solid white;
+.border:hover {
+    transition-duration: 0.4s;
+    background-color: #03a9f4;
 }
 
 .players {
@@ -11,6 +12,12 @@
 .songs {
     font-size: 11px;
     font-family: 'Lemon/Milk', sans-serif;
+}
+
+.song-button {
+    background-color: Transparent;
+    color: white;
+    border: none;
 }
 
 svg {
@@ -45,6 +52,18 @@ svg {
 .tiebreak-color {
     color: #e6e619;
     fill: #e6e619;
+}
+
+@keyframes tiebreak-pulse {
+    0% {
+        background-color: #000000;
+    }
+    50% {
+        background-color: #e6e61944;
+    }
+    100% {
+        background-color: #000000;
+    }
 }
 
 .player-1-highlight {

@@ -5,158 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">   
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="phase_1.js"></script>
   </head>
   <body>
-
-    <style>
-        .players {
-            font-size: 22px;
-            font-family: 'Lemon/Milk', sans-serif;                                       
-        }
-    
-        .songs {
-            font-size: 11px;
-            font-family: 'Lemon/Milk', sans-serif;
-        }
-    
-        svg {
-            width: 16.5px;
-            height: 16.5px;
-        }
-    
-        .player-ban {
-            text-decoration: line-through;
-            text-decoration-thickness: 0.33em;
-        }
-    
-        .player-1-color {
-            text-decoration-color: #e91e63;
-            color: #e91e63;
-            fill: #e91e63;
-        }
-        .player-2-color {
-            text-decoration-color: #03a9f4;
-            color: #03a9f4;
-            fill: #03a9f4;
-        }
-        .player-defend-color {
-            color: #19e619;
-            fill: #19e619;
-        }
-        .player-steal-color {
-            color: #ff8000;
-            fill: #ff8000;
-        }
-    
-        .tiebreak-color {
-            color: #e6e619;
-            fill: #e6e619;
-        }
-    
-        .player-1-highlight {
-            background-color: #e91e6344;
-        }
-    
-        .player-2-highlight {
-            background-color: #03a9f444;
-        }
-    
-        .tiebreak-lean-highlight {
-            background-color: #e6e61922;
-        }
-    
-        .tiebreak-lock-highlight {
-            background-color: #e6e61944;
-        }
-    
-        /* Small devices (landscape phones, 576px and up) */
-        @media (min-width: 576px) {
-        }
-    
-        /* Medium devices (tablets, 768px and up) */
-        @media (min-width: 768px) {
-        }
-    
-        /* Large devices (desktops, 992px and up) */
-        @media (min-width: 992px) {
-            .players {
-                font-size: 28px;
-            }
-    
-            .songs {
-                font-size: 14px;
-            }
-    
-            svg {
-                width: 21px;
-                height: 21px;
-            }
-    
-            .player-ban {
-                text-decoration-thickness: 4.6px;
-            }
-    
-            input[type='radio'] {
-                transform: scale(1.25);
-            }
-        }
-    
-        /* X-Large devices (large desktops, 1200px and up) */
-        @media (min-width: 1200px) {
-            .players {
-                font-size: 34px;
-            }
-    
-            .songs {
-                font-size: 17px;
-            }
-    
-            svg{
-                width: 25.5px;
-                height: 25.5px;
-            }
-    
-            .player-ban {
-                text-decoration-thickness: 5.6px;
-            }
-    
-            input[type='radio'] {
-                transform: scale(1.5);
-            }
-        }
-    
-        /* XX-Large devices (larger desktops, 1400px and up) */
-        @media (min-width: 1400px) {
-            .players {
-                font-size: 40px;
-            }
-    
-            .songs {
-                font-size: 20px;
-            }
-    
-            svg {
-                width: 30px;
-                height: 30px;
-            }
-    
-            .player-ban {
-                text-decoration-thickness: 6.6px;
-            }
-    
-            input[type='radio'] {
-                transform: scale(1.75);
-            }
-        }
-    
-    </style>
-    
+ 
     <div class="container-md bg-black text-white p-3" style="min-width: 768px">
         <div class="row players">
             <div id="player1" class="col text-center player-1-color">
                 <!--Player Name or non-breaking space-->
-                Gabe
+                Atomic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
             <div id="match" class="col-3 text-center">
                 <!--Match name or Group name-->
@@ -164,7 +23,7 @@
             </div>
             <div id="player2" class="col text-center player-2-color">
                 <!--Player Name or non-breaking space-->
-                Miscellany
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miscellany
             </div>
         </div>
         <div class="row songs text-center pt-3">
@@ -174,16 +33,13 @@
             <div class="col-11 p-0 m-0">
                 <div class="row align-items-center p-0 m-0">
                     <div class="col text-center px-0">
-                        <b>Focus</b>
+                        <b>&nbsp;&nbsp;&nbsp;&nbsp;Solo</b>
                     </div>
-                    <div class="col-5 text-center px-0">
-                        <b>SONG</b>
+                    <div class="col-6 text-center px-0">
+                        <b>Hybrid</b>
                     </div>
                     <div class="col-3 text-center px-0">
-                        <b>CHARTER</b>
-                    </div>
-                    <div class="col text-center px-0">
-                        <b>SOURCE</b>
+                        <b>Strum &nbsp;&nbsp;&nbsp;&nbsp;</b>
                     </div>
                 </div>
             </div>
@@ -192,16 +48,66 @@
             </div>
             <span class="border-bottom"></span>
         </div>
-
-
+   
         <div class="row songs text-center">
-            <div class="col border border-primary m-3 p-3">| &nbsp;</div>
-            <div class="col border border-primary m-3 p-3">| I</div>
+            <div class="col border m-3 p-3" id="song1box">
+                <button class="song-button" id="song1" onclick="player1Ban(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+                
+            </div>
+            <div class="col border m-3 p-3" id="song2box">
+                <button class="song-button" id="song2" onclick="player2Ban(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song3box">
+                <button class="song-button" id="song3" onclick="tiebreakerPick(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+        </div>
+
+        <div class="row songs text-center" id="box4">
+            <div class="col border m-3 p-3" id="song4box">
+                <button class="song-button" id="song4" onclick="player1Pick(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song5box">
+                <button class="song-button" id="song5" onclick="player2Pick(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song6box">
+                <button class="song-button" id="song6" onclick="player1Tiebreaker(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
         </div>
 
         <div class="row songs text-center">
-            <div class="col border border-primary m-3 p-3">| |</div>
-            <div class="col border border-primary m-3 p-3">| _</div>
+            <div class="col border m-3 p-3" id="song7box">
+                <button class="song-button" id="song7" onclick="player1Win(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song8box">
+                <button class="song-button" id="song8" onclick="player2Win(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song9box">
+                <button class="song-button" id="song9" onclick="player2Tiebreaker(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+        </div>
+
+        <div class="row songs text-center">
+            <div class="col border m-3 p-3">
+                Blank Border<br>As hybrid songs<br>Are the only cat. with 4 songs
+            </div>
+            <div class="col border m-3 p-3" id="song10box">
+                <button class="song-button" id="song10" onclick="predictedTiebreaker(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3">
+                Blank Border<br>As hybrid songs<br>Are the only cat. with 4 songs
+            </div>
+        </div>
+
+        <div class="row songs text-center">
+            <div class="col border m-3 p-3" id="song11box">
+                <button class="song-button" id="song11" onclick="player1Steal(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song12box">
+                <button class="song-button" id="song12" onclick="player2Steal(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
+            <div class="col border m-3 p-3" id="song13box">
+                <button class="song-button" id="song13" onclick="determineSong(this.id)">Artist - Song<br>Charted by: charter<br>Featured on: Pack</button>
+            </div>
         </div>
     
     <!--
@@ -422,7 +328,7 @@
             </div>
         } -->
     
-        <div class="row songs m-0 p-0">
+        <div class="row songs">
             <span class="border-top"></span>
         </div>
     
@@ -463,7 +369,6 @@
         </div>
     </div>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

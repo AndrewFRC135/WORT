@@ -1,0 +1,277 @@
+{
+    "about":
+    {
+        "tournament_name": "<Tournament Name>",
+        "match_name": "<Match Name>",
+        "player1":
+        {
+            "name": "<Player1 Name>",
+            "pronouns": "<Te/St>",
+            "rank": "<R1>"
+        },
+        "player2":
+        {
+            "name": "<Player2 Name>",
+            "pronouns": "<Te/St>",
+            "rank": "<L1>"
+        },
+        "ruleset":
+        {
+            "best_of": 7,
+            "boss_unlocked": false
+        }
+    },
+
+    "setlist":
+    {
+        "solo":
+        {
+            "songs":
+            [
+                {
+                    "title": "<Title S1>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                },
+                {
+                    "title": "<Title S2>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                },
+                {
+                    "title": "<Title S3>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                }
+            ],
+            "boss":
+            {
+                "title": "<Title SB>",
+                "artist": "<Artist>",
+                "setlist": "<Setlist>",
+                "charter": "<Charter>",
+                "speed": 100,
+                "modifiers": null,
+                "status":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "pick_index": null,
+                    "won_by": null
+                }
+            },
+            "tiebreaker":
+            {
+                "title": "<Title ST>",
+                "artist": "<Artist>",
+                "setlist": "<Setlist>",
+                "charter": "<Charter>",
+                "speed": 100,
+                "modifiers": null,
+                "status":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "pick_index": null,
+                    "won_by": null
+                }
+            }
+        },
+        "hybrid":
+        {
+            "songs":
+            [
+                {
+                    "title": "<Title H1>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                },
+                {
+                    "title": "<Title H2>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                },
+                {
+                    "title": "<Title H3>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                },
+                {
+                    "title": "<Title H4>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                }
+            ],
+            "boss": null,
+            "tiebreaker":
+            {
+                "title": "<Title HT>",
+                "artist": "<Artist>",
+                "setlist": "<Setlist>",
+                "charter": "<Charter>",
+                "speed": 100,
+                "modifiers": null,
+                "status":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "pick_index": null,
+                    "won_by": null
+                }
+            }
+        },
+        "strum":
+        {
+            "songs":
+            [
+                {
+                    "title": "<Title T1>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                },
+                {
+                    "title": "<Title T2>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                },
+                {
+                    "title": "<Title T3>",
+                    "artist": "<Artist>",
+                    "setlist": "<Setlist>",
+                    "charter": "<Charter>",
+                    "speed": 100,
+                    "modifiers": null,
+                    "status":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "pick_index": null,
+                        "won_by": null
+                    }
+                }
+            ],
+            "boss":
+            {
+                "title": "<Title TB>",
+                "artist": "<Artist>",
+                "setlist": "<Setlist>",
+                "charter": "<Charter>",
+                "speed": 100,
+                "modifiers": null,
+                "status":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "pick_index": null,
+                    "won_by": null
+                }
+            },
+            "tiebreaker":
+            {
+                "title": "<Title TT>",
+                "artist": "<Artist>",
+                "setlist": "<Setlist>",
+                "charter": "<Charter>",
+                "speed": 100,
+                "modifiers": null,
+                "status":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "pick_index": null,
+                    "won_by": null
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,12 @@
     {
         "tournament_name": "<Tournament Name>",
         "match_name": "<Match Name>",
+        "ruleset":
+        {
+            "best_of": 7,
+            "boss_unlocked": false,
+            "player1_selects_order": false
+        },
         "player1":
         {
             "name": "<Player1 Name>",
@@ -14,14 +20,8 @@
             "name": "<Player2 Name>",
             "pronouns": "<Te/St>",
             "rank": "<L1>"
-        },
-        "ruleset":
-        {
-            "best_of": 7,
-            "boss_unlocked": false
         }
     },
-
     "setlist":
     {
         "solo":

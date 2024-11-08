@@ -5,273 +5,295 @@
         "match_name": "<Match Name>",
         "ruleset":
         {
+            "player_count": 2,
             "best_of": 7,
-            "boss_unlocked": false,
-            "player1_selects_order": false
+            "bans_per_player": 1,
+            "player1_can_defer_pick": false,
+            "boss_songs_unlocked": false
         },
-        "player1":
-        {
-            "name": "<Player1 Name>",
-            "pronouns": "<Te/St>",
-            "rank": "<R1>"
-        },
-        "player2":
-        {
-            "name": "<Player2 Name>",
-            "pronouns": "<Te/St>",
-            "rank": "<L1>"
-        }
+        "players":
+        [
+            {
+                "name": "<Player1>",
+                "pronouns": "<Pro/Noun>",
+                "nationality": "<Country>",
+                "rank": "<Rank>"
+            },
+            {
+                "name": "<Player2>",
+                "pronouns": "<Pro/Noun>",
+                "nationality": "<Country>",
+                "rank": "<Rank>"
+            }
+        ]
     },
     "setlist":
-    {
-        "solo":
+    [
         {
+            "focus": "Solo",
             "songs":
             [
                 {
-                    "title": "<Title S1>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "Power On",
+                    "artist": "Alice Kane Wolf",
+                    "setlist": "CH V1.1",
+                    "charter": "Miscellany",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 },
                 {
-                    "title": "<Title S2>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "Satch Boogie",
+                    "artist": "Joe Satriani",
+                    "setlist": "GH:WT",
+                    "charter": "Neversoft",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 },
                 {
-                    "title": "<Title S3>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "Jordan",
+                    "artist": "Buckethead",
+                    "setlist": "GH2",
+                    "charter": "Harmonix",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 }
             ],
             "boss":
             {
-                "title": "<Title SB>",
-                "artist": "<Artist>",
-                "setlist": "<Setlist>",
-                "charter": "<Charter>",
-                "speed": 100,
+                "title": "The Duel",
+                "artist": "Rusty Cooley",
+                "setlist": "RBN 2.0",
+                "charter": "RhythmAuthors",
+                "speed": 110,
                 "modifiers": null,
-                "status":
+                "result":
                 {
                     "banned_by": null,
                     "picked_by": null,
-                    "pick_index": null,
-                    "won_by": null
+                    "won_by": null,
+                    "order_index": null
                 }
             },
             "tiebreaker":
             {
-                "title": "<Title ST>",
-                "artist": "<Artist>",
-                "setlist": "<Setlist>",
-                "charter": "<Charter>",
+                "priority" : 1,
+                "title": "Black Widow of La Porte",
+                "artist": "John 5",
+                "setlist": "GH:WoR",
+                "charter": "Neversoft",
                 "speed": 100,
                 "modifiers": null,
-                "status":
+                "result":
                 {
                     "banned_by": null,
                     "picked_by": null,
-                    "pick_index": null,
-                    "won_by": null
+                    "won_by": null,
+                    "order_index": null
                 }
             }
         },
-        "hybrid":
         {
+            "focus": "Hybrid",
             "songs":
             [
                 {
-                    "title": "<Title H1>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "Play With Me",
+                    "artist": "Extreme",
+                    "setlist": "GH:SH",
+                    "charter": "Neversoft",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 },
                 {
-                    "title": "<Title H2>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "Chemical Warfare",
+                    "artist": "Slayer",
+                    "setlist": "GH:WoR",
+                    "charter": "Neversoft",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 },
                 {
-                    "title": "<Title H3>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "Dueling Banjos",
+                    "artist": "Steve Ouimette",
+                    "setlist": "GH:WT (DLC)",
+                    "charter": "Neversoft",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 },
                 {
-                    "title": "<Title H4>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
-                    "speed": 100,
+                    "title": "Riot Act",
+                    "artist": "Exodus",
+                    "setlist": "RBN 1.0",
+                    "charter": "RockGamer",
+                    "speed": 110,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 }
             ],
-            "boss": null,
-            "tiebreaker":
-            {
-                "title": "<Title HT>",
-                "artist": "<Artist>",
-                "setlist": "<Setlist>",
-                "charter": "<Charter>",
+            "boss": {
+                "title": "My Parasite",
+                "artist": "Evile",
+                "setlist": "RBN 1.0",
+                "charter": "EaracheRecords",
                 "speed": 100,
                 "modifiers": null,
-                "status":
+                "result":
                 {
                     "banned_by": null,
                     "picked_by": null,
-                    "pick_index": null,
-                    "won_by": null
+                    "won_by": null,
+                    "order_index": null
+                }
+            },
+            "tiebreaker":
+            {
+                "priority" : 2,
+                "title": "Operation Ground and Pound",
+                "artist": "Dragonforce",
+                "setlist": "RB4 (DLC)",
+                "charter": "Harmonix",
+                "speed": 100,
+                "modifiers": null,
+                "result":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "won_by": null,
+                    "order_index": null
                 }
             }
         },
-        "strum":
         {
+            "focus": "Strum",
             "songs":
             [
                 {
-                    "title": "<Title T1>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "The Way It Ends",
+                    "artist": "Prototype",
+                    "setlist": "GH3",
+                    "charter": "Neversoft",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 },
                 {
-                    "title": "<Title T2>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "Combat Mosh",
+                    "artist": "Lich King",
+                    "setlist": "CH V1",
+                    "charter": "Miscellany, OrangeHat",
                     "speed": 100,
                     "modifiers": null,
-                    "status":
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 },
                 {
-                    "title": "<Title T3>",
-                    "artist": "<Artist>",
-                    "setlist": "<Setlist>",
-                    "charter": "<Charter>",
+                    "title": "If You Want Peace... Prepare for War",
+                    "artist": "Children of Bodom",
+                    "setlist": "GH:WoR",
+                    "charter": "Neversoft",
                     "speed": 100,
-                    "modifiers": null,
-                    "status":
+                    "modifiers": "All Strums",
+                    "result":
                     {
                         "banned_by": null,
                         "picked_by": null,
-                        "pick_index": null,
-                        "won_by": null
+                        "won_by": null,
+                        "order_index": null
                     }
                 }
             ],
             "boss":
             {
-                "title": "<Title TB>",
-                "artist": "<Artist>",
-                "setlist": "<Setlist>",
-                "charter": "<Charter>",
-                "speed": 100,
+                "title": "Subterfuge",
+                "artist": "Terrorizer",
+                "setlist": "RBN 2.0",
+                "charter": "ThatAuthoringGroup",
+                "speed": 110,
                 "modifiers": null,
-                "status":
+                "result":
                 {
                     "banned_by": null,
                     "picked_by": null,
-                    "pick_index": null,
-                    "won_by": null
+                    "won_by": null,
+                    "order_index": null
                 }
             },
             "tiebreaker":
             {
-                "title": "<Title TT>",
-                "artist": "<Artist>",
-                "setlist": "<Setlist>",
-                "charter": "<Charter>",
+                "priority" : 1,
+                "title": "Existo Vulgore",
+                "artist": "Morbid Angel",
+                "setlist": "RBN 2.0",
+                "charter": "ThatAuthoringGroup",
                 "speed": 100,
                 "modifiers": null,
-                "status":
+                "result":
                 {
                     "banned_by": null,
                     "picked_by": null,
-                    "pick_index": null,
-                    "won_by": null
+                    "won_by": null,
+                    "order_index": null
                 }
             }
         }
-    }
+    ]
 }

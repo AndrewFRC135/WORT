@@ -1,31 +1,46 @@
 {
     "about":
     {
-        "tournament_name": "<Tournament Name>",
-        "match_name": "<Match Name>",
+        "tournament_name": "Invitational 5 (Super)",
+        "match_name": "Match Name",
         "ruleset":
         {
-            "player_count": 2,
+            "player_count": 1,
             "best_of": 7,
-            "bans_per_player": 1,
+            "bans_per_player": 0,
             "player1_can_defer_pick": false,
             "boss_songs_unlocked": false
-        },
-        "players":
-        [
+        }
+    },
+    "players":
+    [
+        {
+            "name": "Player1",
+            "pronouns": "Pro/Noun",
+            "nationality": "Country",
+            "rank": "Rank",
+            "state":
             {
-                "name": "<Player1>",
-                "pronouns": "<Pro/Noun>",
-                "nationality": "<Country>",
-                "rank": "<Rank>"
-            },
-            {
-                "name": "<Player2>",
-                "pronouns": "<Pro/Noun>",
-                "nationality": "<Country>",
-                "rank": "<Rank>"
+                "ban_count": 0,
+                "win_count": 0
             }
-        ]
+        },
+        {
+            "name": "Player2",
+            "pronouns": "Pro/Noun",
+            "nationality": "Country",
+            "rank": "Rank",
+            "state":
+            {
+                "ban_count": 0,
+                "win_count": 0
+            }
+        }
+    ],
+    "state": 
+    {
+        "awaiting_pick": false,
+        "picking_player_id": null
     },
     "setlist":
     [
@@ -33,21 +48,6 @@
             "focus": "Solo",
             "songs":
             [
-                {
-                    "title": "Power On",
-                    "artist": "Alice Kane Wolf",
-                    "setlist": "CH V1.1",
-                    "charter": "Miscellany",
-                    "speed": 100,
-                    "modifiers": null,
-                    "result":
-                    {
-                        "banned_by": null,
-                        "picked_by": null,
-                        "won_by": null,
-                        "order_index": null
-                    }
-                },
                 {
                     "title": "Satch Boogie",
                     "artist": "Joe Satriani",
@@ -77,52 +77,13 @@
                         "won_by": null,
                         "order_index": null
                     }
-                }
-            ],
-            "boss":
-            {
-                "title": "The Duel",
-                "artist": "Rusty Cooley",
-                "setlist": "RBN 2.0",
-                "charter": "RhythmAuthors",
-                "speed": 110,
-                "modifiers": null,
-                "result":
+                },
                 {
-                    "banned_by": null,
-                    "picked_by": null,
-                    "won_by": null,
-                    "order_index": null
-                }
-            },
-            "tiebreaker":
-            {
-                "priority" : 1,
-                "title": "Black Widow of La Porte",
-                "artist": "John 5",
-                "setlist": "GH:WoR",
-                "charter": "Neversoft",
-                "speed": 100,
-                "modifiers": null,
-                "result":
-                {
-                    "banned_by": null,
-                    "picked_by": null,
-                    "won_by": null,
-                    "order_index": null
-                }
-            }
-        },
-        {
-            "focus": "Hybrid",
-            "songs":
-            [
-                {
-                    "title": "Play With Me",
-                    "artist": "Extreme",
-                    "setlist": "GH:SH",
-                    "charter": "Neversoft",
-                    "speed": 100,
+                    "title": "The Duel",
+                    "artist": "Rusty Cooley",
+                    "setlist": "RBN 2.0",
+                    "charter": "RhythmAuthors",
+                    "speed": 110,
                     "modifiers": null,
                     "result":
                     {
@@ -131,7 +92,22 @@
                         "won_by": null,
                         "order_index": null
                     }
-                },
+                }
+            ],
+            "tiebreaker":{
+                "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+            }
+        },
+        {
+            "focus": "Hybrid",
+            "songs":
+            [
                 {
                     "title": "Chemical Warfare",
                     "artist": "Slayer",
@@ -176,30 +152,30 @@
                         "won_by": null,
                         "order_index": null
                     }
+                },
+                {
+                    "title": "My Parasite",
+                    "artist": "Evile",
+                    "setlist": "RBN 1.0",
+                    "charter": "EaracheRecords",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
                 }
             ],
-            "boss": {
-                "title": "My Parasite",
-                "artist": "Evile",
-                "setlist": "RBN 1.0",
-                "charter": "EaracheRecords",
-                "speed": 100,
-                "modifiers": null,
-                "result":
-                {
-                    "banned_by": null,
-                    "picked_by": null,
-                    "won_by": null,
-                    "order_index": null
-                }
-            },
             "tiebreaker":
             {
                 "priority" : 2,
-                "title": "Operation Ground and Pound",
-                "artist": "Dragonforce",
-                "setlist": "RB4 (DLC)",
-                "charter": "Harmonix",
+                "title": "The Devil Went Down to Georgia",
+                "artist": "Steve Ouimette",
+                "setlist": "GH3 (DLC)",
+                "charter": "Neversoft",
                 "speed": 100,
                 "modifiers": null,
                 "result":
@@ -215,21 +191,6 @@
             "focus": "Strum",
             "songs":
             [
-                {
-                    "title": "The Way It Ends",
-                    "artist": "Prototype",
-                    "setlist": "GH3",
-                    "charter": "Neversoft",
-                    "speed": 100,
-                    "modifiers": null,
-                    "result":
-                    {
-                        "banned_by": null,
-                        "picked_by": null,
-                        "won_by": null,
-                        "order_index": null
-                    }
-                },
                 {
                     "title": "Combat Mosh",
                     "artist": "Lich King",
@@ -259,40 +220,31 @@
                         "won_by": null,
                         "order_index": null
                     }
+                },
+                {
+                    "title": "Subterfuge",
+                    "artist": "Terrorizer",
+                    "setlist": "RBN 2.0",
+                    "charter": "ThatAuthoringGroup",
+                    "speed": 110,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
                 }
             ],
-            "boss":
-            {
-                "title": "Subterfuge",
-                "artist": "Terrorizer",
-                "setlist": "RBN 2.0",
-                "charter": "ThatAuthoringGroup",
-                "speed": 110,
-                "modifiers": null,
+            "tiebreaker":{
                 "result":
-                {
-                    "banned_by": null,
-                    "picked_by": null,
-                    "won_by": null,
-                    "order_index": null
-                }
-            },
-            "tiebreaker":
-            {
-                "priority" : 1,
-                "title": "Existo Vulgore",
-                "artist": "Morbid Angel",
-                "setlist": "RBN 2.0",
-                "charter": "ThatAuthoringGroup",
-                "speed": 100,
-                "modifiers": null,
-                "result":
-                {
-                    "banned_by": null,
-                    "picked_by": null,
-                    "won_by": null,
-                    "order_index": null
-                }
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
             }
         }
     ]

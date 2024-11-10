@@ -1,13 +1,71 @@
+:root {
+    --pid-0-color: #e91e63;
+    --pid-1-color: #03a9f4; 
+
+    --pid-0-highlight: #e91e6377;
+    --pid-1-highlight: #03a9f477; 
+
+    --tiebreak-color: #ffb300;
+    --tiebreak-highlight: #ffb30077;
+}
+
 /* global style applied to everyting */
 html * {
     font-family: 'Lemon/Milk', sans-serif;
     word-wrap: break-word;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
+#header {
+    font-size: 1.5rem;
+    text-align: center;    
+    align-items: center;                  
+}
+
+.setlist {
+    table-layout: fixed;
+    border-collapse: separate;
+    width: 100%;
+    background-color: #ffffff;
+    border-spacing: 0.25rem;
+}
+
+.setlist  tr, td {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.setlist td {
+    border-width: 0.5rem;
+    border-color: #000000;
+    border-style: solid;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+.setlist th {
+    padding: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.setlist  p {
+    margin: 0;
+    padding: 0;
+}
+
 
 .song-box {
     position: relative;
-    border-color:#e91e63;
-    animation: player-1-selected-pulse 5s infinite;
+    /* animation: player-1-selected-pulse 2s infinite; */
 }
 
 .song-title {
@@ -23,7 +81,84 @@ html * {
     color: #bbbbbb;
 }
 
-.player-1-select {
+
+
+div#pid_0_box:hover {
+    background-color: #FFFFFF;
+}
+
+div#pid_1_box:hover {
+    background-color: #FFFFFF;
+}
+
+td.pid-0-hover:hover {
+    transition-duration: 0.25s;
+    border-color: var(--pid-0-color) !important;
+}
+
+
+td.pid-1-hover:hover {
+    transition-duration: 0.25s;
+    border-color: var(--pid-1-color) !important;
+}
+
+div.pid-0-ban {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the song box) */
+    height: 100%; /* Full height (cover the song box) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, transparent 48%, var(--pid-0-color) 48%, var(--pid-0-color) 52%, transparent 52%);
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+}
+
+td.pid-0-ban {
+    border-color: var(--pid-0-color);
+}
+
+div.pid-1-ban {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the song box) */
+    height: 100%; /* Full height (cover the song box) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, transparent 48%, var(--pid-1-color) 48%, var(--pid-1-color) 52%, transparent 52%);
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+}
+
+td.pid-1-ban {
+    border-color: var(--pid-1-color);
+}
+
+
+td.tiebreak-song-pick {
+    border-color: var(--tiebreak-color);
+}
+
+td.tiebreak-song-pulse {
+    animation: tiebreak-pulse 1s infinite;
+}
+
+td.pid-0-pick {
+    border-color: var(--pid-0-color);
+    
+}
+
+td.pid-0-pulse {
+    animation: pid-0-song-pulse 2s infinite;
+}
+
+td.pid-0-win {
+    background-color: var(--pid-0-highlight);
+}
+
+td.pid-0-pick > div {
     position: absolute;
     top: 50%;
     left: 0;
@@ -32,11 +167,15 @@ html * {
     height: 0;
     border-top: 2rem solid transparent;
     border-bottom: 2rem solid transparent;
-    border-left: 2rem solid #e91e63;
+    border-left: 2rem solid var(--pid-0-color);
     transform: translateY(-50%);
 }
 
-.player-1-select > p {
+td.pid-0-pulse > div {
+    animation: pid-0-select-pulse 2s infinite;
+}
+
+td.pid-0-pick > div > p {
     display: block;
     position: absolute;
     font-size: 1.25rem;
@@ -49,7 +188,20 @@ html * {
     transform: translate(-50%, -50%);
 }
 
-.player-2-select {
+
+td.pid-1-pick {
+    border-color: var(--pid-1-color);
+}
+
+td.pid-1-pulse {
+    animation: pid-1-song-pulse 2s infinite;
+}
+
+td.pid-1-win {
+    background-color: var(--pid-1-highlight);
+}
+
+td.pid-1-pick > div {
     position: absolute;
     top: 50%;
     right: 0;
@@ -58,11 +210,15 @@ html * {
     height: 0;
     border-top: 2rem solid transparent;
     border-bottom: 2rem solid transparent;
-    border-right: 2rem solid #03a9f4;
+    border-right: 2rem solid var(--pid-1-color);
     transform: translateY(-50%);
 }
 
-.player-2-select > p {
+td.pid-1-pulse > div {
+    animation: pid-1-select-pulse 2s infinite;
+}
+
+td.pid-1-pick > div > p {
     display: block;
     position: absolute;
     font-size: 1.25rem;
@@ -75,53 +231,10 @@ html * {
     transform: translate(50%, -50%);
 }
 
-#setlist {
-    table-layout: fixed;
-    border-collapse: separate;
-    width: 100%;
+.break-bar {
     background-color: #ffffff;
-    border-spacing: 0.25rem;
+    height: 0.25em;
 }
-
-#setlist  tr, td {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-}
-
-#setlist td {
-    border-width: 0.5rem;
-    border-color: #000000;
-    border-style: solid;
-    padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1rem;
-}
-
-#setlist th {
-    padding: 0.25rem;
-    font-size: 1.5rem;
-}
-
-#setlist  p {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-.border:hover {
-    transition-duration: 0.4s;
-    background-color: #03a9f4;
-}
-
-.players {
-    font-size: 22px;                        
-}
-
-
 
 .song-button {
     background-color: Transparent;
@@ -139,15 +252,15 @@ svg {
     text-decoration-thickness: 0.33em;
 }
 
-.player-1-color {
-    text-decoration-color: #e91e63;
-    color: #e91e63;
-    fill: #e91e63;
+.pid-0-color {
+    text-decoration-color: var(--pid-0-color);
+    color: var(--pid-0-color);
+    fill: var(--pid-0-color);
 }
-.player-2-color {
-    text-decoration-color: #03a9f4;
-    color: #03a9f4;
-    fill: #03a9f4;
+.pid-1-color {
+    text-decoration-color: var(--pid-1-color);
+    color: var(--pid-1-color);
+    fill: var(--pid-1-color);
 }
 .player-defend-color {
     color: #19e619;
@@ -162,30 +275,75 @@ svg {
     fill: #e6e619;
 }
 
-@keyframes player-1-selected-pulse {
+@keyframes pid-0-song-pulse {
     0% {
-        border-color:#e91e63;
+        border-color:var(--pid-0-color);
     }
-    33% {
-        border-color:#e91e63;
-    }
-    67% {
-        border-color:#000000;
+    50% {
+        border-color:var(--pid-0-highlight);
     }
     100% {
-        border-color:#e91e63;
+        border-color:var(--pid-0-color);
+    }
+}
+
+@keyframes pid-0-select-pulse {
+    0% {
+        border-left-color:var(--pid-0-color);
+    }
+    50% {
+        border-left-color:var(--pid-0-highlight);
+    }
+    100% {
+        border-left-color:var(--pid-0-color);
+    }
+}
+
+@keyframes pid-1-song-pulse {
+    0% {
+        border-color:var(--pid-1-color);
+    }
+    50% {
+        border-color:var(--pid-1-highlight);
+    }
+    100% {
+        border-color:var(--pid-1-color);
+    }
+}
+
+@keyframes pid-1-select-pulse {
+    0% {
+        border-right-color:var(--pid-1-color);
+    }
+    50% {
+        border-right-color:var(--pid-1-highlight);
+    }
+    100% {
+        border-right-color:var(--pid-1-color);
+    }
+}
+
+@keyframes tiebreak-song-pulse {
+    0% {
+        border-color:var(--pid-0-color);
+    }
+    50% {
+        border-color:var(--pid-0-highlight);
+    }
+    100% {
+        border-color:var(--pid-0-color);
     }
 }
 
 @keyframes tiebreak-pulse {
     0% {
-        background-color: #000000;
+        border-color: var(--tiebreak-color);
     }
     50% {
-        background-color: #e6e61944;
+        border-color: var(--tiebreak-highlight);
     }
     100% {
-        background-color: #000000;
+        border-color: var(--tiebreak-color);
     }
 }
 

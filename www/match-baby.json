@@ -1,0 +1,267 @@
+{
+    "about":
+    {
+        "tournament_name": "Invitational 5 (Simple)",
+        "match_name": "Match Name",
+        "ruleset":
+        {
+            "player_count": 1,
+            "best_of": 7,
+            "bans_per_player": 0,
+            "player1_can_defer_pick": false,
+            "boss_songs_unlocked": false
+        }
+    },
+    "players":
+    [
+        {
+            "name": "Player1",
+            "pronouns": "Pro/Noun",
+            "nationality": "Country",
+            "rank": "Rank",
+            "state":
+            {
+                "ban_count": 0,
+                "win_count": 0
+            }
+        },
+        {
+            "name": "Player2",
+            "pronouns": "Pro/Noun",
+            "nationality": "Country",
+            "rank": "Rank",
+            "state":
+            {
+                "ban_count": 0,
+                "win_count": 0
+            }
+        }
+    ],
+    "state": 
+    {
+        "awaiting_pick": false,
+        "picking_player_id": null
+    },
+    "setlist":
+    [
+        {
+            "focus": "Solo",
+            "songs":
+            [
+                {
+                    "title": "Power On",
+                    "artist": "Alice Kane Wolf",
+                    "setlist": "CH V1.1",
+                    "charter": "Miscellany",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Satch Boogie",
+                    "artist": "Joe Satriani",
+                    "setlist": "GH:WT",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Jordan",
+                    "artist": "Buckethead",
+                    "setlist": "GH2",
+                    "charter": "Harmonix",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                }
+            ],
+            "tiebreaker":
+            {
+                "priority" : 1,
+                "title": "Black Widow of La Porte",
+                "artist": "John 5",
+                "setlist": "GH:WoR",
+                "charter": "Neversoft",
+                "speed": 100,
+                "modifiers": null,
+                "result":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "won_by": null,
+                    "order_index": null
+                }
+            }
+        },
+        {
+            "focus": "Hybrid",
+            "songs":
+            [
+                {
+                    "title": "Play With Me",
+                    "artist": "Extreme",
+                    "setlist": "GH:SH",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Chemical Warfare",
+                    "artist": "Slayer",
+                    "setlist": "GH:WoR",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Dueling Banjos",
+                    "artist": "Steve Ouimette",
+                    "setlist": "GH:WT (DLC)",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Riot Act",
+                    "artist": "Exodus",
+                    "setlist": "RBN 1.0",
+                    "charter": "RockGamer",
+                    "speed": 110,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                }
+            ],
+            "tiebreaker":
+            {
+                "priority" : 2,
+                "title": "Operation Ground and Pound",
+                "artist": "Dragonforce",
+                "setlist": "RB4 (DLC)",
+                "charter": "Harmonix",
+                "speed": 100,
+                "modifiers": null,
+                "result":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "won_by": null,
+                    "order_index": null
+                }
+            }
+        },
+        {
+            "focus": "Strum",
+            "songs":
+            [
+                {
+                    "title": "The Way It Ends",
+                    "artist": "Prototype",
+                    "setlist": "GH3",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Combat Mosh",
+                    "artist": "Lich King",
+                    "setlist": "CH V1",
+                    "charter": "Miscellany, OrangeHat",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "If You Want Peace... Prepare for War",
+                    "artist": "Children of Bodom",
+                    "setlist": "GH:WoR",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": "All Strums",
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                }
+            ],
+            "tiebreaker":
+            {
+                "priority" : 1,
+                "title": "Existo Vulgore",
+                "artist": "Morbid Angel",
+                "setlist": "RBN 2.0",
+                "charter": "ThatAuthoringGroup",
+                "speed": 100,
+                "modifiers": null,
+                "result":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "won_by": null,
+                    "order_index": null
+                }
+            }
+        }
+    ]
+}

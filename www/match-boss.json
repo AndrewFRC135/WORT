@@ -1,0 +1,251 @@
+{
+    "about":
+    {
+        "tournament_name": "Invitational 5 (Super)",
+        "match_name": "Match Name",
+        "ruleset":
+        {
+            "player_count": 1,
+            "best_of": 7,
+            "bans_per_player": 0,
+            "player1_can_defer_pick": false,
+            "boss_songs_unlocked": false
+        }
+    },
+    "players":
+    [
+        {
+            "name": "Player1",
+            "pronouns": "Pro/Noun",
+            "nationality": "Country",
+            "rank": "Rank",
+            "state":
+            {
+                "ban_count": 0,
+                "win_count": 0
+            }
+        },
+        {
+            "name": "Player2",
+            "pronouns": "Pro/Noun",
+            "nationality": "Country",
+            "rank": "Rank",
+            "state":
+            {
+                "ban_count": 0,
+                "win_count": 0
+            }
+        }
+    ],
+    "state": 
+    {
+        "awaiting_pick": false,
+        "picking_player_id": null
+    },
+    "setlist":
+    [
+        {
+            "focus": "Solo",
+            "songs":
+            [
+                {
+                    "title": "Satch Boogie",
+                    "artist": "Joe Satriani",
+                    "setlist": "GH:WT",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Jordan",
+                    "artist": "Buckethead",
+                    "setlist": "GH2",
+                    "charter": "Harmonix",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "The Duel",
+                    "artist": "Rusty Cooley",
+                    "setlist": "RBN 2.0",
+                    "charter": "RhythmAuthors",
+                    "speed": 110,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                }
+            ],
+            "tiebreaker":{
+                "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+            }
+        },
+        {
+            "focus": "Hybrid",
+            "songs":
+            [
+                {
+                    "title": "Chemical Warfare",
+                    "artist": "Slayer",
+                    "setlist": "GH:WoR",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Dueling Banjos",
+                    "artist": "Steve Ouimette",
+                    "setlist": "GH:WT (DLC)",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Riot Act",
+                    "artist": "Exodus",
+                    "setlist": "RBN 1.0",
+                    "charter": "RockGamer",
+                    "speed": 110,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "My Parasite",
+                    "artist": "Evile",
+                    "setlist": "RBN 1.0",
+                    "charter": "EaracheRecords",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                }
+            ],
+            "tiebreaker":
+            {
+                "priority" : 2,
+                "title": "The Devil Went Down to Georgia",
+                "artist": "Steve Ouimette",
+                "setlist": "GH3 (DLC)",
+                "charter": "Neversoft",
+                "speed": 100,
+                "modifiers": null,
+                "result":
+                {
+                    "banned_by": null,
+                    "picked_by": null,
+                    "won_by": null,
+                    "order_index": null
+                }
+            }
+        },
+        {
+            "focus": "Strum",
+            "songs":
+            [
+                {
+                    "title": "Combat Mosh",
+                    "artist": "Lich King",
+                    "setlist": "CH V1",
+                    "charter": "Miscellany, OrangeHat",
+                    "speed": 100,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "If You Want Peace... Prepare for War",
+                    "artist": "Children of Bodom",
+                    "setlist": "GH:WoR",
+                    "charter": "Neversoft",
+                    "speed": 100,
+                    "modifiers": "All Strums",
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                },
+                {
+                    "title": "Subterfuge",
+                    "artist": "Terrorizer",
+                    "setlist": "RBN 2.0",
+                    "charter": "ThatAuthoringGroup",
+                    "speed": 110,
+                    "modifiers": null,
+                    "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+                }
+            ],
+            "tiebreaker":{
+                "result":
+                    {
+                        "banned_by": null,
+                        "picked_by": null,
+                        "won_by": null,
+                        "order_index": null
+                    }
+            }
+        }
+    ]
+}
